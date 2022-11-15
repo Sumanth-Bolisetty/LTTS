@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".bookTktActivity">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background"
+        />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:stretchColumns="1"
+        android:layout_margin="10dp"
+        >
+
+        <TableRow
+            android:layout_margin="10dp"
+            android:gravity="center_horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/booking"
+                android:text="BOOKING"
+                android:textColor="@color/white"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/fromtxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:text="From"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/fromStn"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@android:drawable/btn_dropdown"
+                >
+            </Spinner>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/totxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:text="To"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/toStn"
+                android:background="@android:drawable/btn_dropdown"
+                >
+
+            </Spinner>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/journeytxt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Journey"
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/journeyType"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+
+                <RadioButton
+                    android:id="@+id/singleType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Single"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:checked="true"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/twoWayType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Two-way"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </RadioGroup>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/person"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Passengers"
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="20dp"
+                        android:text="Adult"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/adultCount"
+                        android:background="@android:drawable/btn_dropdown"
+                        >
+
+                    </Spinner>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="20dp"
+                        android:text="Child"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/childCount"
+                        android:background="@android:drawable/btn_dropdown"
+                        >
+
+                    </Spinner>
+                </LinearLayout>
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/bookBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/btncolor"
+                android:text="BOOK"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="25dp" />
+        </TableRow>
+
+    </TableLayout>
+</RelativeLayout>

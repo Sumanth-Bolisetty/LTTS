@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".selectTktActivity">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background"
+        />
+
+    <TextView
+        android:id="@+id/optionTkt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="30dp"
+        android:text="Booking"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        />
+
+    <Button
+        android:id="@+id/generalBooking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_below="@id/optionTkt"
+        android:text="General Ticket"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/btncolor"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <Button
+        android:id="@+id/seasonBooking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_below="@id/generalBooking"
+        android:backgroundTint="@color/btncolor"
+        android:textColor="@color/white"
+        android:text="Season Ticket"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".registerActivity"
+    >
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/signup"
+        android:text="Registration"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_margin="40dp"
+        android:gravity="center"
+
+        />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signup"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="#BAF3D4"
+        android:drawableLeft="@drawable/ic_baseline_person_outline_24"
+        android:drawablePadding="10dp"
+        android:drawableTint="@color/app"
+        android:hint="Enter Full Name"
+        android:padding="15dp"
+        android:textColor="@color/app"
+        android:textColorHint="@color/app" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_margin="15dp"
+        android:background="#BAF3D4"
+        android:drawableLeft="@drawable/ic_baseline_info_24"
+        android:drawablePadding="10dp"
+        android:drawableTint="@color/app"
+        android:hint="Enter Username/Email ID "
+        android:padding="15dp"
+        android:textColor="@color/app"
+        android:textColorHint="@color/app" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username"
+        android:layout_margin="15dp"
+        android:background="#BAF3D4"
+        android:padding="15dp"
+        android:hint="Enter Password"
+        android:textColorHint="@color/app"
+        android:textColor="@color/app"
+        android:drawableLeft="@drawable/ic_baseline_vpn_key_24"
+        android:drawablePadding="10dp"
+        android:drawableTint="@color/app"
+        android:inputType="textPassword"
+        />
+
+    <EditText
+        android:id="@+id/Cfmpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_margin="15dp"
+        android:background="#BAF3D4"
+        android:padding="15dp"
+        android:hint="Confirm Password"
+        android:textColorHint="@color/app"
+        android:textColor="@color/app"
+        android:drawableLeft="@drawable/ic_baseline_vpn_key_24"
+        android:drawablePadding="10dp"
+        android:drawableTint="@color/app"
+        android:inputType="textPassword"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/signupBtn"
+        android:layout_below="@id/Cfmpassword"
+        android:text="Register"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/btncolor"
+        android:textAllCaps="false"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginTV"
+        android:text="Already a User! Login Here"
+        android:layout_below="@id/signupBtn"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        />
+
+</RelativeLayout>
